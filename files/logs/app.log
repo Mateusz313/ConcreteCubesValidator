@@ -1,0 +1,568 @@
+2021-05-23 10:13:46,030 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: files\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:43)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:21)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 10:13:48,602 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 10:13:59,158 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 10:13:59,159 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 10:13:59,161 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Main loop - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:401)
+2021-05-23 10:14:21,989 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: files\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:43)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:21)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 10:14:24,571 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 10:14:34,940 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 10:14:34,942 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 10:14:34,944 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Main loop - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:401)
+2021-05-23 10:25:07,485 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: files\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:45)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:22)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 10:25:10,259 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 10:25:14,522 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 10:25:14,524 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 10:25:14,529 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Main loop - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:401)
+2021-05-23 10:27:52,298 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: files\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:45)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:22)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 10:27:54,794 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 10:27:58,314 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 10:27:58,316 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 10:27:58,318 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Main loop - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:401)
+2021-05-23 10:28:50,529 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: files\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:45)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:22)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 10:28:52,884 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 10:29:05,586 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 10:29:05,588 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 10:29:05,606 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Main loop - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:401)
+2021-05-23 10:53:51,949 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: src\main\resources\mtw\concretecubesvalidator\Files\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:52)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:25)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 10:53:54,338 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 10:53:58,519 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 10:53:58,521 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 10:53:58,523 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Case: WAITING_FOR_COMMAND - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:97)
+2021-05-23 11:15:05,905 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: mtw\concretecubesvalidator\model\communication\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:52)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:25)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 11:15:08,596 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 11:15:12,962 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 11:15:12,964 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 11:15:12,987 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Main loop - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:401)
+2021-05-23 11:16:04,452 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: mtw\concretecubesvalidator\model\communication\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:52)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:25)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 11:16:07,011 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 11:16:10,843 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 11:16:10,844 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 11:16:10,846 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Case: WAITING_FOR_COMMAND - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:97)
+2021-05-23 11:16:32,335 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: mtw\concretecubesvalidator\model\communication\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:52)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:25)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 11:16:34,902 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 11:16:46,547 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 11:16:46,548 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 11:16:46,564 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Case: WAITING_FOR_COMMAND - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:97)
+2021-05-23 11:20:06,270 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: mtw\concretecubesvalidator\model\communication\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:53)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:25)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 11:20:08,808 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 11:20:12,567 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 11:20:12,568 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 11:20:12,572 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Case: WAITING_FOR_COMMAND - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:97)
+2021-05-23 11:26:14,931 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: mtw\concretecubesvalidator\model\communication\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:55)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:26)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 11:26:17,439 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 11:27:07,440 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: mtw\concretecubesvalidator\model\communication\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:55)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:26)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 11:27:30,660 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: mtw\concretecubesvalidator\model\communication\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:55)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:26)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 11:27:33,221 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 11:27:37,597 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 11:27:37,599 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 11:27:37,600 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Main loop - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:401)
+2021-05-23 11:29:00,591 ERROR mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Read default connection properties error
+java.nio.file.NoSuchFileException: C:\Users\mateu\eclipse%20202003-workspace\ConcreteCubesValidator\target\classes\mtw\concretecubesvalidator\model\communication\comunicationProperties.csv
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:375)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:426)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:160)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2916)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3396)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3436)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.readDefaultProperties(CommunicationProperties.java:55)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.CommunicationProperties.<init>(CommunicationProperties.java:26)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.<init>(PlcCommunication.java:51)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.PlcCommunicationController.<init>(PlcCommunicationController.java:35)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.MainApp.<init>(MainApp.java:44)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:802)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-23 11:29:03,175 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 11:29:14,322 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 11:29:14,323 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 11:29:14,326 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Main loop - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:401)
+2021-05-23 11:38:51,961 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 11:39:01,273 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 11:39:01,274 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 11:39:01,275 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Main loop - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:401)
+2021-05-23 11:55:14,681 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 11:55:25,649 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 11:55:25,651 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 11:55:25,652 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Case: WAITING_FOR_COMMAND - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:97)
+2021-05-23 11:56:32,804 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 11:56:43,875 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 11:56:43,877 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 11:56:43,879 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Case: WAITING_FOR_COMMAND - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator@0.0.2-SNAPSHOT/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:97)
+2021-05-23 12:20:09,788 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 12:20:23,985 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 12:20:23,987 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 12:20:23,988 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Main loop - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:401)
+2021-05-23 12:20:32,977 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Loading measurement data from file: C:\Users\mateu\Downloads\measurementStatuss.csv ...
+2021-05-23 12:20:47,120 INFO mtw.concretecubesvalidator.MainApp [JavaFX Application Thread] Stop procedure started
+2021-05-23 12:20:47,121 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [JavaFX Application Thread] Stoppin all Threads
+2021-05-23 12:20:47,125 INFO mtw.concretecubesvalidator.model.communication.PlcCommunication [PLC Communication Thread] Main loop - sleep interrupted
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method)
+	at ConcreteCubesValidator/mtw.concretecubesvalidator.model.communication.PlcCommunication.run(PlcCommunication.java:401)

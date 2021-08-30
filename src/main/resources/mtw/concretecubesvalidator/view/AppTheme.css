@@ -1,0 +1,117 @@
+*.label {
+    -fx-font-size: 11.0pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.7;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 11.0pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-alignment: center;
+    -fx-opacity: 0.7;
+}
+
+.table-view .table-cell{
+    -fx-font-size: 9.5pt; 
+    -fx-text-fill: black;
+    -fx-opacity: 1.0;    
+}
+
+.table-view:focused {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    }
+
+.table-row-cell:selected {
+    -fx-background-color: lightsteelblue;
+    -fx-table-cell-border-color: white;
+}
+
+.button{  
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2.0;
+    -fx-background-radius: 0.0;
+    -fx-background-color: #404040;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 11.0pt;
+    -fx-text-fill: #fbfbfb;
+    -fx-background-insets: 0.0 0.0 0.0 0.0, 0.0, 1.0, 2.0;
+    -fx-opacity: 0.7;
+}
+
+.button:disabled {  
+    -fx-background-color: #8c8c8c;
+}
+
+.button:focused {
+    -fx-border-color: LightSkyBlue;
+}
+
+.button:pressed{
+    -fx-background-color: #111111;
+    -fx-text-fill: #d8d8d8;
+}
+
+.toggle-button{  
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2.0;
+    -fx-background-radius: 0.0;
+    -fx-background-color: #404040;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 11.0pt;
+    -fx-text-fill: #fbfbfb;
+    -fx-background-insets: 0.0 0.0 0.0 0.0, 0.0, 1.0, 2.0;
+    -fx-opacity: 0.7;
+}
+
+.toggle-button:disabled {  
+    -fx-background-color: #8c8c8c;
+}
+
+.toggle-button:focused {
+    -fx-border-color: LightSkyBlue;
+}
+
+.toggle-button:pressed{
+    -fx-background-color: #111111;
+    -fx-text-fill: #d8d8d8;
+}
+
+.tab-label{
+    -fx-font-size: 11.0pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.7;
+}
+
+.menu .label{
+    -fx-font-size: 9.0pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 1.0;	
+}
+
+.context-menu {
+    -fx-background-color: derive(#8c8c8c,50.0%);
+}
+
+.check-box{
+	 -fx-font-size: 11.0pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.7;
+}
+
+.dialog-pane:header .label{
+    -fx-font-size: 11.0px;
+    -fx-text-fill: black;
+    -fx-opacity: 1.0;
+}
+
+.dialog-pane:header .header-panel .label{
+    -fx-font-size: 14.0px;
+    -fx-text-fill: black;
+    -fx-opacity: 0.8;
+}

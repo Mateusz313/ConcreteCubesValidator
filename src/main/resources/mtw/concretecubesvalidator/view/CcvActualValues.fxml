@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Polygon?>
+
+<AnchorPane stylesheets="@AppTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mtw.concretecubesvalidator.view.CcvActualValuesController">
+	<children>
+		<TabPane prefHeight="600.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<tabs>
+				<Tab text="Measurement">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="496.0">
+							<children>
+								<SplitPane dividerPositions="0.38731218697829717" prefHeight="600.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+									<items>
+										<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="642.0">
+											<children>
+												<Polygon fill="#767c82" layoutX="98.0" layoutY="332.0" points="250.0, 100.0, 250.0, -100.0, 50.0, -100.0, 50.0, 100.0" stroke="BLACK" />
+												<Polygon fill="#767c82" layoutX="98.0" layoutY="332.0" points="10, 52.0, 10, -150, 50.0, -100.0, 50.0, 100.0" stroke="BLACK" />
+												<Polygon fill="#767c82" layoutX="98.0" layoutY="332.0" points="50.0, -100.0, 250.0, -100.0, 200, -150.0, 10, -150" stroke="BLACK" />
+												<GridPane layoutX="47.0" layoutY="409.0">
+													<columnConstraints>
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+													<children>
+														<Label graphicTextGap="10.0" prefHeight="23.0" prefWidth="53.0" text="WIDTH" />
+														<Label fx:id="widthLabel_mw" graphicTextGap="10.0" text="label" GridPane.rowIndex="1" />
+													</children>
+												</GridPane>
+												<GridPane layoutX="214.0" layoutY="319.0">
+													<columnConstraints>
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+													<children>
+														<Label graphicTextGap="10.0" prefHeight="23.0" prefWidth="90.0" text="WEIGTH" />
+														<Label fx:id="weightLabel_mw" text="Label" GridPane.rowIndex="1" />
+													</children>
+												</GridPane>
+												<GridPane layoutX="361.0" layoutY="319.0">
+													<columnConstraints>
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+													<children>
+														<Label graphicTextGap="10.0" prefHeight="23.0" prefWidth="53.0" text="HEIGHT" />
+														<Label fx:id="heightLabel_mw" text="Label" GridPane.rowIndex="1" />
+													</children>
+												</GridPane>
+												<GridPane layoutX="214.0" layoutY="451.0">
+													<columnConstraints>
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+													<children>
+														<Label text="LENGTH" />
+														<Label fx:id="lengthLabel_mw" text="Label" GridPane.rowIndex="1" />
+													</children>
+												</GridPane>
+                                    <GridPane AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+      												<Label fx:id="sampleDateLabel_mw" prefHeight="18.0" prefWidth="114.0" text="Label" />
+      												<Label fx:id="sampleTimeLabel_mw" text="Label" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane layoutX="139.0" layoutY="50.0" prefHeight="40.0" prefWidth="250.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="250.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Measurement Status" />
+                                          <Label fx:id="measurementStatusLabel_mw" prefHeight="22.0" text="Label" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane layoutX="98.0" layoutY="60.0" AnchorPane.bottomAnchor="397.6" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="140.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="70.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="132.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+      												<Label text="Bar code:" />
+      												<Label fx:id="barCodeLabel_mw" text="Label" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+											</children>
+										</AnchorPane>
+										<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+											<children>
+												<TableView fx:id="measurementList" layoutY="6.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+													<columns>
+														<TableColumn fx:id="sampleDateColumn" prefWidth="100.0" text="Date" />
+														<TableColumn fx:id="sampleTimeColumn" prefWidth="100.0" text="Time" />
+														<TableColumn fx:id="barCodeColumn" prefWidth="100.0" text="Bar code" />
+														<TableColumn fx:id="weightColumn" prefWidth="100.0" text="Weight [g]" />
+														<TableColumn fx:id="lengthColumn" prefWidth="100.0" text="Length [mm]" />
+														<TableColumn fx:id="widthColumn" prefWidth="100.0" text="Width [mm]" />
+														<TableColumn fx:id="heightColumn" prefWidth="100.0" text="Height [mm]" />
+													</columns>
+												</TableView>
+                                    <HBox layoutX="82.0" layoutY="517.0" prefHeight="35.0" prefWidth="235.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#handleNewSingleMeasurement" prefHeight="31.0" prefWidth="173.0" text="Single Measurement" />
+                                          <Button mnemonicParsing="false" onAction="#handleMeasurementSerie" prefHeight="31.0" prefWidth="158.0" text="Measurement Serie" />
+                                          <Button mnemonicParsing="false" onAction="#handleStopMeasurementLine" prefHeight="30.0" prefWidth="100.0" text="Stop" />
+                                          <Button mnemonicParsing="false" onAction="#handleRestartMeasurementLine" prefHeight="30.0" prefWidth="100.0" text="Restart" textOverrun="CLIP" />
+                                          <Button mnemonicParsing="false" onAction="#handleMeasurementDetails" prefHeight="30.0" prefWidth="100.0" text="Details" />
+                                          <Button mnemonicParsing="false" onAction="#handleDeleteMeasurement" prefHeight="30.0" prefWidth="100.0" text="Delate" />
+                                       </children>
+                                    </HBox>
+											</children>
+										</AnchorPane>
+									</items>
+								</SplitPane>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab text="Actual Values">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="478.0" prefWidth="842.0">
+							<children>
+								<SplitPane dividerPositions="0.6" prefHeight="600.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+									<items>
+										<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+											<children>
+												<Polygon fill="#767c82" layoutX="217.0" layoutY="324.0" points="250.0, 100.0, 250.0, -100.0, 50.0, -100.0, 50.0, 100.0" stroke="BLACK" />
+												<Polygon fill="#767c82" layoutX="217.0" layoutY="324.0" points="10, 52.0, 10, -150, 50.0, -100.0, 50.0, 100.0" stroke="BLACK" />
+												<Polygon fill="#767c82" layoutX="217.0" layoutY="324.0" points="50.0, -100.0, 250.0, -100.0, 200, -150.0, 10, -150" stroke="BLACK" />
+												<GridPane layoutX="165.0" layoutY="390.0">
+													<columnConstraints>
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+													<children>
+														<Label graphicTextGap="10.0" prefHeight="23.0" prefWidth="53.0" text="WIDTH" />
+														<Label fx:id="widthLabel" graphicTextGap="10.0" text="label" GridPane.rowIndex="1" />
+													</children>
+												</GridPane>
+												<GridPane layoutX="330.0" layoutY="300.0">
+													<columnConstraints>
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+													<children>
+														<Label graphicTextGap="10.0" prefHeight="23.0" prefWidth="66.0" text="WEIGTH" />
+														<Label fx:id="weightLabel" text="Label" GridPane.rowIndex="1" />
+													</children>
+												</GridPane>
+												<GridPane layoutX="490.0" layoutY="300.0">
+													<columnConstraints>
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+													<children>
+														<Label graphicTextGap="10.0" prefHeight="23.0" prefWidth="53.0" text="HEIGHT" />
+														<Label fx:id="heightLabel" text="Label" GridPane.rowIndex="1" />
+													</children>
+												</GridPane>
+												<GridPane layoutX="333.0" layoutY="435.0">
+													<columnConstraints>
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+													<children>
+														<Label text="LENGTH" />
+														<Label fx:id="lengthLabel" text="Label" GridPane.rowIndex="1" />
+													</children>
+												</GridPane>
+                                    <GridPane layoutX="333.0" layoutY="16.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+      												<Label fx:id="sampleDateLabel" prefHeight="20.0" prefWidth="110.0" text="Label" />
+      												<Label fx:id="sampleTimeLabel" prefHeight="20.0" prefWidth="110.0" text="Label" GridPane.rowIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane layoutX="200.0" layoutY="120.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.199951171875" minWidth="10.0" prefWidth="70.39996337890625" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.60003662109375" minWidth="10.0" prefWidth="129.60003662109375" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+      												<Label text="Bar code:" />
+      												<Label fx:id="barCodeLabel" text="Label" GridPane.columnIndex="1" />
+                                       </children>
+                                    </GridPane>
+                                    <HBox layoutX="200.0" layoutY="20.0" prefHeight="35.0" prefWidth="200.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+                                       <children>
+      												<ToggleButton fx:id="startStopReadActualValuesToggleButton" mnemonicParsing="false" onAction="#handleReadActualValuesThread" text="Start read data" />
+                                       </children>
+                                    </HBox>
+											</children>
+										</AnchorPane>
+										<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+											<children>
+												<GridPane layoutX="22.0" layoutY="93.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+													<columnConstraints>
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+														<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+													</columnConstraints>
+													<rowConstraints>
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+														<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+													</rowConstraints>
+													<children>
+														<Label alignment="CENTER_RIGHT" graphicTextGap="10.0" prefHeight="23.0" prefWidth="140.0" text="LENGTH">
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets></Label>
+														<Label text="Sensor 1 " GridPane.rowIndex="1" />
+														<Label text="Sensor 2" GridPane.rowIndex="2" />
+														<Label text="Sensor 3" GridPane.rowIndex="3" />
+														<Label alignment="CENTER_RIGHT" graphicTextGap="10.0" prefHeight="23.0" prefWidth="140.0" text="WIDTH" textAlignment="RIGHT" GridPane.rowIndex="4" />
+														<Label alignment="CENTER_RIGHT" graphicTextGap="10.0" prefHeight="23.0" prefWidth="140.0" text="HEIGHT" textAlignment="RIGHT" GridPane.rowIndex="8" />
+														<Label text="Sensor 1 " GridPane.rowIndex="5" />
+														<Label text="Sensor 1 " GridPane.rowIndex="9" />
+														<Label text="Sensor 2" GridPane.rowIndex="6" />
+														<Label text="Sensor 2" GridPane.rowIndex="10" />
+														<Label text="Sensor 3" GridPane.rowIndex="7" />
+														<Label text="Sensor 3" GridPane.rowIndex="11" />
+														<Label fx:id="lengthsensor1Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+														<Label fx:id="lengthsensor2Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+														<Label fx:id="lengthsensor3Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+														<Label fx:id="widthsensor1Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+														<Label fx:id="widthsensor2Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+														<Label fx:id="widthsensor3Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+														<Label fx:id="heightsensor1Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+														<Label fx:id="heightsensor2Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+														<Label fx:id="heightsensor3Label" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+													</children>
+												</GridPane>
+											</children>
+										</AnchorPane>
+									</items>
+								</SplitPane>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab text="PLC Alarms and Logs">
+					<content>
+					<AnchorPane>
+                     <children>
+                        <ButtonBar layoutX="14.0" layoutY="516.0" prefHeight="40.0" prefWidth="450.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0">
+                          <buttons>
+                              <Button mnemonicParsing="false" onAction="#handleAcknowledgementSelected" prefHeight="35.0" text="Acknowledgement selected" />
+                            <Button mnemonicParsing="false" onAction="#handleAcknowledgementAll" text="Acknowledgement all" />
+                          </buttons>
+                        </ButtonBar>
+                        <TableView fx:id="plcStatusList" layoutX="14.0" layoutY="14.0" prefHeight="494.0" prefWidth="1184.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                          <columns>
+                              <TableColumn fx:id="priorityColumn" prefWidth="55.0" text="Priority" />
+                            <TableColumn fx:id="occuranceDateColumn" prefWidth="200.0" text="Date" />
+                            <TableColumn fx:id="occuranceTimeColumn" minWidth="0.0" prefWidth="200.0" text="Time" />
+                              <TableColumn fx:id="descriptionColumn" prefWidth="704.0" text="Description" />
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</children>
+</AnchorPane>

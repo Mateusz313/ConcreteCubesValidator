@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane prefHeight="600.0" prefWidth="1200.0" styleClass="background" stylesheets="@AppTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mtw.concretecubesvalidator.view.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleNew" text="New" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="Save As" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleClose" text="Exit" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Connection">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleConnect" text="Connect" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleDisonnect" text="Disconect" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleConnectionProperties" text="Properties" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Options">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleCalibration" text="Calibration" />
+                  <RadioMenuItem fx:id="plcEmulatorMenuItem" mnemonicParsing="false" onAction="#handlePlcEmulator" text="PLC emulator" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <GridPane prefHeight="0.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="749.8000091552734" minWidth="10.0" prefWidth="711.6000122070312" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="950.8" minWidth="10.0" prefWidth="267.7999267578125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="388.79998779296875" minWidth="10.0" prefWidth="140.6000732421876" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="388.79998779296875" minWidth="0.0" prefWidth="90.00004882812505" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints maxHeight="20.0" minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Connection status:   " GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+            <Label fx:id="connectionStatusLabel" text="Disconnected" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ProgressIndicator fx:id="connectionProgressIndicator" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="20.0" progress="0.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="-16.0" />
+               </padding></ProgressIndicator>
+            <Label fx:id="plcEmulatorLabel" text="PLC EMULATOR MODE" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>
